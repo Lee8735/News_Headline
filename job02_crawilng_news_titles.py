@@ -29,11 +29,13 @@ category = ['Politics', 'Economic', 'Social', 'Culture', 'World', 'IT']
 # 크롤링 한 데이터가 저장될 데이터 프레임
 df_titles = pd.DataFrame()
 
-# 크롤링 한 제목들이 저장될 리스트.
-titles = []
+
 
 # !!!! 여기 range변경
 for k in range(0, 2):
+
+    # 크롤링 한 제목들이 저장될 리스트.
+    titles = []
 
     # 웹 페이지 열기
     url = f'https://news.naver.com/section/10{k}'

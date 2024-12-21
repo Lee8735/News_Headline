@@ -79,7 +79,8 @@ print(df_titles['category'].value_counts())
 
 # 파일명에 저장한 시간 추가해서 dataframe을 csv파일로 저장.
 # 시간은 나노초 단위까지 구분 가능하다.
-df_titles.to_csv(f'./crawling_data/naver_headline_news_0_1_{datetime.datetime.now().strftime("%y%m%d")}.csv', index= False)
+df_titles.to_csv(f'./crawling_data/naver_headline_news_0_1_{datetime.datetime.now().strftime("%y%m%d")}.csv',
+                 index= False)
 
 
 print('hello')
